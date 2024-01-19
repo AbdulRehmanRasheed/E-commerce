@@ -1,0 +1,1113 @@
+@import url('https://images.pexels.com/photos/8133026/pexels-photo-8133026.jpeg?auto=compress&cs=tinysrgb&w=600');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+
+h1 {
+    font-size: 55px;
+    line-height: 66px;
+    color: black;
+}
+
+h2 {
+    font-size: 40px;
+    line-height: 56px;
+    color: black;
+}
+
+h3 {
+    font-size: 20px;
+    line-height: 40 px;
+    color: black;
+}
+
+h4 {
+    font-size: 30px;
+    color: black;
+}
+
+p {
+    font-size: 20px;
+    color: #444;
+    margin: 15px 0 20px 0;
+}
+
+/* ABOUT HEADER */
+
+.header {
+    padding: 0px 60px;
+    background: white;
+    box-shadow: -12px 12px 13px -1px rgba(51, 51, 51, 0.43);
+    top: -5px;
+    height: 90px;
+    position: sticky;
+    top: 0;
+    z-index: 999;
+    left: 0;
+
+}
+
+/* ABOUT IMAGE */
+
+.logo {
+    margin: 20p 45px;
+    height: 80px;
+}
+
+.logo img {
+    width: 80px;
+    height: 50%;
+    margin: 0 30px;
+    /* margin: 50px 0px; */
+}
+
+
+
+/* ABOUT NAVBER */
+
+.navbar {
+    display: flex;
+    /* justify-content: space-around; */
+    font-size: 20px;
+    align-items: center;
+    padding: 0px 8%;
+    position: relative;
+    left: 48px;
+    top: -43px;
+    list-style: none;
+    transition: 0.4s ease;
+}
+
+.navbar li {
+    list-style: none;
+}
+
+.navbar li a {
+    text-decoration: none;
+    color: #000;
+    padding: 10px 40px;
+    transition: all 0.3s ease;
+}
+
+.navbar li a:hover,
+.navbar li a.active {
+    color: #fff;
+    border-radius: 12px;
+    background: #000;
+}
+
+/*
+.navbar li a:hover,
+.navbar li a.active {
+    color: #ffff;
+    background: #0000
+    border-radius: 12px;
+}*/
+
+/* 
+.navbar li a:hover::after,
+.navbar li a.active::after {
+    content: '';
+    position: absolute;
+    background: #000;
+} */
+
+
+.mobile,
+.mobile-nav {
+    display: none;
+}
+
+
+/* HOME PAGE */
+
+.mainPage {
+    background-image: url('https://images.pexels.com/photos/7561201/pexels-photo-7561201.jpeg');
+    height: 80vh;
+    width: 100%;
+    background-size: cover;
+    top: 2px;
+    position: relative;
+    background-position: top 30% right -6px;
+    padding: 15vh 80px;
+    justify-content: inherit;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+.mainPage h3 {
+    padding: 1px 30px;
+}
+
+.mainPage h1 {
+    color: turquoise;
+}
+
+.mainPage button {
+    font-family: 'times new roman';
+    font-weight: bold;
+    color: #070608 !important;
+    font-size: 14px;
+    text-shadow: 4px 4px 4px #7CACDE;
+    box-shadow: 0px 0px 0px #BEE2F9;
+    padding: 10px 18px;
+    border-radius: 14px;
+    border: 2px solid #555555;
+    background: #63B8EE;
+}
+
+.mainPage button:hover {
+    color: #14396A !important;
+    background: #468CCF;
+    background: linear-gradient(to top, #468CCF, #63B8EE);
+    cursor: pointer;
+}
+
+/* ABOUT FEACTURES OF WEBSITE */
+/* 
+.freeShip {
+    padding: 18px 34px;
+    position: relative;
+    top: 39px;
+    box-shadow: 20px 20px 34px rgba(51, 51, 51, 0.43);
+    border: 1px solid whitesmoke;
+    border-right-width: 185vh;
+    border-left-width: 4vh;
+    left: 20px;
+}
+
+.freeShip img {
+    position: relative;
+    height: 20vh;
+    width: 16vh;
+    padding: 17px 0px;
+}*/
+
+section.features {
+    display: flex;
+    justify-content: space-evenly;
+    padding: 15px 10px;
+}
+
+.freatures {
+    content: "";
+    clear: both;
+    display: flex;
+    border: 1px solid black;
+    flex-direction: row;
+    justify-content: space-evenly;
+}
+
+/* Style for each individual item (image + text) */
+.freeShip {
+    float: left;
+    width: 11%;
+    padding: 15px;
+}
+
+/* Style for the images inside each item */
+.freeShip img {
+    width: 50%;
+    height: auto;
+    /* border: 1.5px solid #5555; */
+    margin: 10px 10px;
+    opacity: 0.8;
+    height: 5rem;
+    width: 5.5rem;
+    aspect-ratio: 3/2;
+    object-fit: contain;
+    mix-blend-mode: color-burn;
+}
+
+.freeShip h5 {
+    position: relative;
+    display: inline-block;
+    left: 1.5rem;
+}
+
+.freeShip:hover {
+    filter: drop-shadow(10px 5px 7px #9999);
+}
+
+/* ABOUT PTODUCTS WHICH ARE AVAILABLE IN WEBSITE */
+
+.products {
+    padding: 10px 5rem;
+    padding-top: 4rem;
+    text-align: center;
+}
+
+.products h1 {
+    text-align: center;
+    padding-top: 25px;
+    padding-bottom: 10px;
+    font-size: 3.4rem;
+    font-weight: 600;
+    color: #000;
+}
+
+.products p {
+    text-align: center;
+    font-weight: 600;
+}
+
+.pro {
+    width: 23%;
+    min-width: 250px;
+    padding: 10px 20px;
+    border: 2px solid #46494796;
+    border-radius: 20px;
+    cursor: pointer;
+    box-shadow: 20px 20px 30px rgba(0, 0, 0, 0.03);
+    margin: 10px 0px;
+    position: relative;
+    transition: 0.2s ease;
+}
+
+.pro:hover {
+    transform: scale(1.03);
+    box-shadow: 20px 20px 30px rgba(0, 0, 0, 0.2);
+}
+
+.pro img {
+    width: 100%;
+    /* height: 100%; */
+    aspect-ratio: 3/2;
+    object-fit: contain;
+    mix-blend-mode: color-burn;
+    border-radius: 20px;
+    transition: all 0.3s ease;
+}
+
+.des {
+    text-align: start;
+    padding: 10px 0px;
+}
+
+.des span {
+    font-size: .7rem;
+    font-weight: 600;
+    color: #555;
+}
+
+.des h4 {
+    font-size: 1.3rem;
+    padding: 10px 0px;
+    /* font-weight: 600; */
+    color: #1a1a1a;
+}
+
+.des i {
+    font-size: 15px;
+    color: rgba(243, 185, 25);
+}
+
+.des h5 {
+    font-size: 1rem;
+    font-weight: 700;
+    color: #088178;
+    padding-top: 8px;
+}
+
+.cart {
+    position: absolute;
+    bottom: 20px;
+    right: 20px;
+    width: 40px;
+    height: 40px;
+    line-height: 40px;
+    background-color: #e8f6ea;
+    border-radius: 50px;
+    border: 1px solid #cce7d0;
+    font-weight: 500;
+}
+
+/* 
+.pro-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    padding-top: 20px;
+} */
+.pro-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    max-width: 1200px;
+    /* Optional: set a maximum width for the container */
+    margin: 0 auto;
+}
+
+/* ABOUT BANNER */
+
+.banner {
+    margin: 4rem 0px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    background-image: url('https://images.pexels.com/photos/220067/pexels-photo-220067.jpeg?cs=srgb&dl=pexels-pixabay-220067.jpg&fm=jpg');
+    width: 100%;
+    height: 13rem;
+    background-size: cover;
+    background-position: center;
+}
+
+.banner h4 {
+    font-size: 1rem;
+    font-weight: 600;
+    color: #fff;
+}
+
+.banner h2 {
+    font-size: 2.5rem;
+    font-weight: 600;
+    color: #fff;
+}
+
+.banner h2 span {
+    color: red;
+}
+
+.banner h2 a {
+    color: rgba(0, 0, 0, 0.6);
+}
+
+.banner button {
+    font-family: georgia;
+    font-weight: bold;
+    color: #FFFFFF !important;
+    font-size: 13px;
+    box-shadow: 0px 1px 3px #888888;
+    padding: 8px 13px;
+    border-radius: 8px;
+    border: 2px solid #c5d2e2;
+    background: #222222;
+    background: linear-gradient(to top, #222222, #999999);
+}
+
+.banner button:hover {
+    color: #444444 !important;
+    background: #FFFFFF;
+}
+
+/* ABOUT ADVERTISEMENTS BANNER  */
+
+.ad-banners {
+    padding: 10px 2rem;
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+.box-banner {
+    margin: 4rem 0px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    background-image: url('https://as2.ftcdn.net/v2/jpg/01/91/85/19/1000_F_191851943_LF2Bjm6vadPSN3hUq9POUZhXrlkCWOAi.jpg');
+    width: 38rem;
+    /* 30rem */
+    height: 20rem;
+    padding: 30px;
+    background-size: cover;
+    background-position: center;
+}
+
+.box-banner2 {
+    background-image: url('https://img.freepik.com/free-photo/shirt-mockup-concept-with-plain-clothing_23-2149448751.jpg?size=626&ext=jpg&ga=GA1.1.1546980028.1704326400&semt=ais');
+}
+
+.box-banner h4 {
+    font-size: 1rem;
+    font-weight: 600;
+    color: #3d3f3d;
+}
+
+.box-banner h2 {
+    font-size: 2.5rem;
+    font-weight: 700;
+    color: #a8acab;
+}
+
+.box-banner span {
+    padding: 5px 0px;
+    font-style: oblique;
+    font-weight: 500;
+}
+
+.box-banner button {
+    color: #FFFFFF !important;
+    font-size: 13px;
+    box-shadow: 0px 1px 3px #888888;
+    padding: 8px 13px;
+    border-radius: 8px;
+    border: 2px solid #c5d2e2;
+    background: none;
+    /* background: linear-gradient(to top, #222222, #9999); */
+}
+
+.box-banner:hover button {
+    color: #444444 !important;
+    background: #FFFFFF;
+}
+
+.text-banner {
+    padding: 0px 5rem;
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    /* position: absolute; */
+}
+
+.box-banner- {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    background-image: url('https://epoque.pk/cdn/shop/products/Image_0009_049A8749copy.jpg?v=1669012019');
+    width: 32%;
+    height: 15rem;
+    padding: 20px;
+    background-size: cover;
+    background-position: center;
+}
+
+.box-banner- h2 {
+    color: #dfd9d9;
+    font-weight: 800;
+}
+
+.box-banner- h4 {
+    color: #e58787;
+    font-weight: 600;
+    font-size: 1.2rem;
+}
+
+.box-banner-2 {
+    background-image: url('https://miro.medium.com/v2/resize:fit:566/1*HmgIbfzmOQZIoHPgidjycg.png');
+}
+
+.box-banner-2 h2 {
+    font-size: 1.7rem;
+    color: rgb(58, 50, 50);
+}
+
+.box-banner-3 {
+    background-image: url('https://www.oshi.pk/images/variation/t-shirt-for-girls-stylish-in-yellow-cute-cat-print-round-neck-half-sleeves-tee-shirt-23507-993.jpg');
+}
+
+.box-banner-3 h2 {
+    font-size: 1.9rem;
+    color: #777;
+    font-style: italic;
+}
+
+/* ABOUT NESWLETTER */
+
+.newsletter {
+    margin-top: 4rem;
+    margin-bottom: 2rem;
+    padding: 4rem 8rem;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    background-image: url('https://t3.ftcdn.net/jpg/02/26/54/32/240_F_226543201_ZtKNzyJqxGdW5Lc1louWUd3euRmbjDh9.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: 18% 20%;
+}
+
+.newsletter h4 {
+    color: #000;
+    font-size: 1.5rem;
+    font-weight: 800;
+}
+
+.newsletter p {
+    color: #335733;
+    font-size: 1rem;
+    font-weight: 600;
+}
+
+.newsletter span {
+    color: #dd4d4d;
+}
+
+.newsletterForm input {
+    height: 20px;
+    /* font-size: 1rem; */
+    padding: 16px 18px;
+    border: 2px solid #3d3d3d;
+    border-radius: 10px;
+    outline: none;
+}
+
+.newsletterForm button {
+    color: #fff !important;
+    background-color: #088178;
+    font-size: 13px;
+    box-shadow: 0px 1px 3px #888888;
+    padding: 8px 13px;
+    border-radius: 8px;
+    border: 2px solid #c5d2e2;
+}
+
+.newsletterForm button:hover {
+    color: #444444 !important;
+    background-color: #FFFFFF;
+    /* background-color: #088178; */
+    cursor: pointer;
+}
+
+/* ABOUT footer */
+
+.footer {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    padding: 10px 5rem;
+}
+
+.footer-logo {
+    width: 90px;
+    height: 29%;
+    margin-bottom: 20px;
+}
+
+.Column {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    margin-bottom: 25px;
+}
+
+.margin {
+    margin-top: 25px;
+}
+
+.footer h5 {
+    font-size: 1.8rem;
+    padding-bottom: 20px;
+}
+
+.footer p {
+    font-size: 16px;
+    margin: 0 0 10px 0;
+
+}
+
+.footer a {
+    font-size: 17px;
+    margin-bottom: 20px;
+    text-decoration: none;
+    color: #1a1a1a;
+
+}
+
+.follow {
+    margin-top: 20px;
+}
+
+.follow i {
+    color: #3d3f3d;
+    padding-right: 6px;
+    cursor: pointer;
+}
+
+.follow i:hover {
+    color: #5594e7;
+}
+
+.Column a:hover {
+    color: #4ce085;
+}
+
+/* 
+.install .row img {
+    aspect-ratio: 3/2;
+    object-fit: contain;
+    mix-blend-mode: color-burn;
+    border-radius: 20px;
+    transition: all 0.3s ease;
+
+} */
+
+.copyright {
+    padding: 20px 5rem;
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+}
+
+/* ABOUT SHOP PAGE */
+.shop-page {
+    background-image: url('https://www.autostraddle.com/wp-content/uploads/2016/11/Gay-Winter-Coats-Feature.png?w=1200&resize=1200%2C600');
+    width: 100%;
+    height: 20rem;
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding: 15px;
+}
+
+.shop-page h2 {
+    font-size: 3rem;
+    font-weight: 800;
+    color: #fff;
+    font-style: italic;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serifx;
+}
+
+.shop-page p {
+    font-size: 1.3rem;
+    color: #fff;
+    font-weight: 500;
+}
+
+.pagination {
+    padding: 10px 10rem;
+    padding-top: 30px;
+    text-align: center;
+}
+
+.pagination a {
+    text-decoration: none;
+    font-size: 20px;
+    font-weight: 700;
+    background-color: #088178;
+    padding: 15px 20px;
+    border-radius: 8px;
+    color: #fff;
+}
+
+/* SINGLR IMAGE DEATILS */
+
+.product-details {
+    padding: 5rem 5rem;
+    background-color: rgb(209, 214, 218);
+    display: flex;
+    padding-top: 40px;
+
+}
+
+
+#main-img {
+    height: 30rem;
+    cursor: pointer;
+}
+
+.single-product-img {
+    width: 40%;
+    margin: 0px 20px;
+}
+
+.small-img-group {
+    display: flex;
+
+    justify-content: space-between;
+}
+
+.single-small-img {
+    flex-basis: 32%;
+    /* border: 1px solid #3d3d4d; */
+    cursor: pointer;
+
+}
+
+.single-pro-details {
+    width: 50%;
+    padding-top: 30px;
+    margin-left: 20px;
+}
+
+.single-pro-details h6 {
+    font-size: 15px;
+}
+
+.single-pro-details h4 {
+    padding: 20px 0px 10px 0px;
+    font-size: 2.2rem;
+}
+
+.single-pro-details h2 {
+    font-size: 2.5rem;
+    padding-bottom: 10px;
+    font-weight: 800;
+    color: #000;
+}
+
+.single-pro-details select {
+    padding: 5px 10px;
+    display: block;
+    border-radius: 8px;
+    border: 1px solid #eeeeee;
+    margin-bottom: 20px;
+}
+
+.single-pro-details select:focus {
+    outline: none;
+}
+
+.single-pro-details input {
+    width: 70px;
+    padding-left: 10px;
+    font-size: 20px;
+    margin-bottom: 10px;
+    height: 30px;
+    border-radius: 8px;
+}
+
+.single-pro-details input:focus {
+    outline: none;
+}
+
+.single-pro-details button {
+    color: #FFFFFF !important;
+    font-size: 13px;
+    /* box-shadow: 0px 1px 3px #888888; */
+    padding: 8px 13px;
+    border-radius: 8px;
+    border: 2px solid #c5d2e2;
+    background: none;
+    background: #088178;
+}
+
+.single-pro-details button:hover {
+    color: #444444 !important;
+    font-weight: 600;
+    background-color: #FFFFFF;
+    /* background-color: #088178; */
+    cursor: pointer;
+}
+
+.single-pro-details span {
+    line-height: 25px;
+}
+
+/* ABOUT OUR BLOG PAGE */
+.blogs {
+    padding: 0px 5rem;
+}
+
+.blog-box {
+    display: flex;
+    align-items: center;
+    width: 100%;
+    padding-top: 5rem;
+    margin-top: 5rem;
+    padding-bottom: 10px;
+}
+
+.blog-img {
+    width: 50%;
+    margin-right: 50px;
+    cursor: pointer;
+}
+
+.blog-img img {
+    width: 100%;
+    height: 25rem;
+    object-fit: cover;
+}
+
+.blog-page {
+    background-image: url('https://miro.medium.com/v2/resize:fit:5120/1*42ebJizcUtZBNIZPmmMZ5Q.jpeg');
+    height: 18rem;
+    background-position: top 40% right 30%;
+}
+
+.blog-img-details {
+    width: 60%;
+}
+
+.blog-img-details a {
+    text-decoration: none;
+    color: #000;
+    font-size: 15px;
+    transition: 0.3s;
+    font-weight: 700;
+}
+
+.blog-img-details a:hover {
+    color: #088178;
+}
+
+/* ABOUT ABOUTUS PAGE */
+
+.about-page {
+    background-image: url('https://png.pngtree.com/thumb_back/fh260/background/20220313/pngtree-open-ground-night-view-buildings-and-high-rise-buildings-image_996726.jpg');
+    height: 16rem;
+    background-position: top 40% right 30%;
+}
+
+.about-head {
+    padding: 2rem 5rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    margin-top: 2rem;
+}
+
+.about-head img {
+    width: 50%;
+    height: auto;
+    object-fit: cover;
+    cursor: pointer;
+    border-radius: 10px;
+    margin: 2rem;
+}
+
+.about-head div {
+    padding-left: 2rem;
+}
+
+.about-app {
+    padding: 2rem 5rem;
+    text-align: center;
+}
+
+.about-app video {
+    width: 50%;
+    height: 120%;
+    object-fit: cover;
+    border-radius: 20px;
+    margin-top: 2rem;
+}
+
+/*
+ABOUT CONTACT PAGE */
+
+.contect_page {
+    background-image: url('https://wallpapercave.com/wp/wp4490728.jpg');
+    height: 14rem;
+    background-position: top 40% right 30%;
+}
+
+.contect_details {
+    padding: 2rem 5rem;
+    padding-top: 8rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.text_details {
+    width: 40%;
+}
+
+.text_details span,
+.form_details form span {
+    font-size: 12px;
+}
+
+.text_details h2,
+.form_details form h2 {
+    font-size: 2.5rem;
+    font-weight: 800;
+    color: #000;
+    padding-bottom: 10px;
+    font-style: italic;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serifx;
+}
+
+.text_details h3 {
+    font-size: 1.5rem;
+    font-weight: 600;
+    color: #000;
+    padding-bottom: 10px;
+}
+
+.text_details li {
+    list-style: none;
+    padding: 10px 0px;
+    display: flex;
+}
+
+.text_details li i {
+    padding-right: 25px;
+    padding-top: 18px;
+    font-size: 16px;
+}
+
+.text_details li p {
+    font-size: 18px;
+}
+
+.contact_map {
+    width: 55%;
+    height: 400px;
+}
+
+.contact_map iframe {
+    width: 100%;
+    height: 100%;
+    border: 0;
+}
+
+.form_details {
+    display: flex;
+    justify-content: space-between;
+    margin: 20px;
+    padding: 50px 40px;
+    border: 2px solid black;
+}
+
+.form_details form {
+    width: 85%;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+.form_details form input,
+.form_details form textarea {
+    width: 100%;
+    padding: 10px 10px;
+    border-radius: 8px;
+    border: 1px solid #eeeeee;
+    margin-bottom: 20px;
+}
+
+.form_details form button {
+    color: #FFFFFF !important;
+    font-size: 13px;
+    padding: 8px 13px;
+    border-radius: 8px;
+    border: 2px solid #aaacaf;
+    background: none;
+    background: #088178;
+    font-weight: 700;
+}
+
+.form_details form button:hover {
+    color: #444444 !important;
+    font-weight: 600;
+    background-color: #FFFFFF;
+    cursor: pointer;
+}
+
+
+.people {
+    padding-top: 20px;
+    padding-bottom: 25px;
+    position: relative;
+    left: 18rem;
+    /* width: 40%; */
+}
+
+.people p {
+    display: flex;
+    line-height: 25px;
+    position: relative;
+    top: -75px;
+    left: 35px;
+    font-size: 18px;
+    margin: 0;
+    line-height: 25px;
+}
+
+
+.people p span {
+    font-size: 23px;
+    line-height: 25px;
+    font-weight: 600;
+    color: #000;
+    position: relative;
+    left: 121px
+}
+
+.people img {
+    padding-top: 10px;
+    border-radius: 45%;
+    width: 12%;
+    height: 15%;
+    object-fit: cover;
+    cursor: pointer;
+    /* width: 200px; */
+}
+
+/* ABOUT MEDIA QURIES */
+
+@media (max-width:799px) {
+    .navbar {
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        align-items: flex-start;
+        position: absolute;
+        margin-left: 45rem;
+        /* 26rem */
+        top: -5.2rem;
+        padding: 9rem 0px 0px 15px;
+        right: 0px;
+        height: 97vh;
+        width: 300px;
+        background-color: #e3e6f3;
+        list-style: none;
+        transition: 0.4s ease;
+    }
+
+    /* 
+    .active,
+    .navbar {
+        margin-left: 28rem;
+    } */
+
+    .navbar li {
+        margin-bottom: 30px;
+    }
+
+
+    .mobile-logo {
+        display: flex;
+        flex-direction: row;
+    }
+
+    .mobile {
+        position: relative;
+        top: 24px;
+        left: 15px;
+    }
+
+    .mobile-nav {
+        position: relative;
+        left: 38rem;
+        top: -3rem;
+        display: flex;
+        flex-direction: row;
+        justify-content: flex-start;
+        color: #3e3e3e;
+        font-size: 24px;
+    }
+
+    .shopping-bag {
+        padding: 0px 30px 0px 0px;
+    }
+
+    .mobile,
+    .mobile-logo {
+        display: flex;
+        justify-content: flex-start;
+    }
+
+    .mainPage {
+        height: 80vh;
+        width: 100%;
+        background-size: cover;
+        top: 2px;
+        background-position: top 30% right 30%;
+        padding: 15vh 80px;
+
+    }
+}
